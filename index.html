@@ -69,12 +69,8 @@
         const ChevronDown = (props) => <IconBase {...props} d={<polyline points="6 9 12 15 18 9"></polyline>} />;
         const ChevronRight = (props) => <IconBase {...props} d={<polyline points="9 18 15 12 9 6"></polyline>} />;
         const ArrowLeft = (props) => <IconBase {...props} d={<><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></>} />;
-        const Globe = (props) => <IconBase {...props} d={<><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></>} />;
         const HeartHandshake = (props) => <IconBase {...props} d={<><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.15-.26c.92.45 1.56 1.25 2.22 2.09"></path><path d="M12 5l2.96 2.96a2.17 2.17 0 0 1 0 3.08v0c-.82.82-2.13.85-3 .07l-2.07-1.9a2.82 2.82 0 0 0-3.15-.26c-.92.45-1.56 1.25-2.22 2.09"></path></>} />;
         const BookOpen = (props) => <IconBase {...props} d={<><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></>} />;
-        const PenTool = (props) => <IconBase {...props} d={<path d="m12 19 7-7 3 3-7 7-3-3z"></path>} />;
-        const Palette = (props) => <IconBase {...props} d={<><circle cx="13.5" cy="6.5" r=".5"></circle><circle cx="17.5" cy="10.5" r=".5"></circle><circle cx="8.5" cy="7.5" r=".5"></circle><circle cx="6.5" cy="12.5" r=".5"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></>} />;
-        const HeartPulse = (props) => <IconBase {...props} d={<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>} />;
         const Users = (props) => <IconBase {...props} d={<><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></>} />;
         const Info = (props) => <IconBase {...props} d={<><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></>} />;
         const CheckCircle = (props) => <IconBase {...props} d={<><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></>} />;
@@ -83,502 +79,7 @@
         const Scale = (props) => <IconBase {...props} d={<><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></>} />;
         const Shield = (props) => <IconBase {...props} d={<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>} />;
         const X = (props) => <IconBase {...props} d={<><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></>} />;
-
-        // --- DATOS MAESTROS ACTUALIZADOS CON ODS DETALLADOS ---
-        const PDA_DATA = {
-          'pda-2': {
-            id: 'pda-2',
-            trimestre: 2,
-            title: 'La diversidad étnica, cultural y lingüística de México a favor de una sociedad intercultural',
-            subject: 'Español II',
-            grado: '2º Secundaria',
-            pda: 'Compara y contrasta textos sobre las tensiones y conflictos en las sociedades contemporáneas y manifiesta, de manera oral o escrita, la necesidad de practicar la comunicación asertiva.',
-            metodología: 'ABP (Aprendizaje Basado en Proyectos) + Rutinas de Pensamiento Visible',
-            ejes: ['Interculturalidad Crítica', 'Pensamiento Crítico', 'Apropiación de las culturas a través de la lectura y la escritura'],
-            perfil: ['Comunicador Asertivo: Manifiesta sus ideas con claridad y respeto.', 'Ciudadano Comprometido: Actúa con fraternidad ante la diversidad.'],
-            // ODS ACTUALIZADOS CON ESTRUCTURA DETALLADA
-            ods: [
-                { id: 10, nombre: 'Reducción de las Desigualdades', color: '#DD1367', meta: 'Meta 10.2: Potenciar y promover la inclusión social, económica y política de todas las personas, independientemente de su edad, sexo, discapacidad, raza, etnia, origen, religión o situación económica.', cita: 'Agenda 2030, ONU' },
-                { id: 16, nombre: 'Paz, Justicia e Instituciones Sólidas', color: '#00689D', meta: 'Meta 16.7: Garantizar la adopción en todos los niveles de decisiones inclusivas, participativas y representativas que respondan a las necesidades.', cita: 'Agenda 2030, ONU' }
-            ],
-            identidad: 'Fraternidad y Justicia: "Educar para la sensibilidad ante las nuevas pobrezas".',
-            materiales: 'Video sobre migración, noticias impresas, tarjetas de roles, fichas de escucha, proyector.',
-            evaluacion: 'Evaluación formativa mediante rutinas de pensamiento y sumativa con rúbrica de Mesa Redonda.',
-            color: 'blue',
-            fases: [
-              {
-                titulo: 'FASE 1: Detonante y Fundamentos (Exploración)',
-                sesiones: [
-                  { 
-                    num: 1, 
-                    obj: 'La Verdad Poliédrica', 
-                    actividades: [
-                      'INICIO: El docente da la bienvenida y proyecta el video sobre la migración en Monterrey.',
-                      'Pregunta detonante rápida: "¿Quiénes ganan y quiénes pierden con este fenómeno?".',
-                      'Se escribe la AFIRMACIÓN CENTRAL en el pizarrón: "La llegada constante de migrantes a Monterrey trae más beneficios que problemas a nuestra ciudad, por lo que debemos recibirlos con los brazos abiertos sin poner condiciones."',
-                      'DESARROLLO - Rutina "Verdad ¿Para Quién?": Discutir en plenaria, se analiza la situación. ¿Quién haría esa afirmación? ¿Qué está en juego (trabajo, seguridad, agua)?',
-                      'Lluvia de Ideas: Los alumnos dictan una lista de todas las personas/grupos involucrados (Migrantes, Gobierno de NL, Vecinos, Empresarios, ONGs).',
-                      'Tabla "Verdad ¿Para Quién?": En su cuaderno, dibujan una tabla y seleccionan 3 perspectivas distintas para analizar la afirmación central.',
-                      'CIERRE: Reflexión individual escrita: "¿Cómo cambia el conflicto de la migración dependiendo de quién cuenta la historia?".',
-                      'Tarea: Traer para la siguiente clase una noticia impresa.'
-                    ] 
-                  },
-                  { 
-                    num: 2, 
-                    obj: 'El Poder de las Palabras', 
-                    actividades: [
-                      'INICIO: Lluvia de palabras en el pizarrón con carga emocional distinta para un mismo fenómeno (ej. "Migrante" vs. "Ilegal"). Breve discusión sobre percepción.',
-                      'DESARROLLO: Los alumnos sacan su noticia impresa.',
-                      'Utilizan dos colores: Azul para HECHOS (datos verificables) y Rojo para OPINIONES (adjetivos, juicios).',
-                      'Identifican si el texto busca informar o persuadir.',
-                      'Comparan con el compañero: ¿Qué noticia es más "roja" (subjetiva) y cuál es más "azul" (objetiva)?',
-                      'CIERRE: Plenaria rápida: ¿Qué medios de comunicación locales parecen tener más opinión que hechos?'
-                    ] 
-                  },
-                  { 
-                    num: 3, 
-                    obj: 'Falacias y Lógica', 
-                    actividades: [
-                      'INICIO: Definición de "Falacia". Ejemplos: Ad Hominem, Generalización Apresurada, Falso Dilema.',
-                      'DESARROLLO: Mapa Conceptual rápido sobre tipos de falacias.',
-                      'Actividad Gamificada: El docente lee frases polémicas y los alumnos identifican la falacia.',
-                      'Revisión de noticias para encontrar falacias.',
-                      'CIERRE: Ticket de salida: Escribe un ejemplo de falacia escuchada recientemente.'
-                    ] 
-                  },
-                  { 
-                    num: 4, 
-                    obj: 'Organización de Equipos', 
-                    actividades: [
-                      'INICIO: Explicación del Producto Final (Mesa Redonda). Formación de 6 equipos heterogéneos.',
-                      'DESARROLLO: Sorteo de Temas (Crisis del Agua, Gentrificación, Lenguas, Seguridad, etc.).',
-                      'Asignación de Roles: Entrega de tarjetas (Moderador, Defensores, Críticos, Sintetizador, Interrogador).',
-                      'Lectura exploratoria del tema.',
-                      'CIERRE: Entrega de hoja de registro de roles por equipo.'
-                    ] 
-                  }
-                ]
-              },
-              {
-                titulo: 'FASE 2: Argumentación y Preparación (Andamiaje)',
-                sesiones: [
-                  { 
-                    num: 5, 
-                    obj: 'Construcción de Argumentos', 
-                    actividades: [
-                      'INICIO: Recordatorio de estructura: Afirmación + Evidencia (Datos) + Razonamiento.',
-                      'DESARROLLO: Trabajo en equipos. Rutina "Afirmación - Soporte - Cuestionamiento".',
-                      'Redactan 3 argumentos fuertes apoyados en datos reales (INEGI, ONU).',
-                      'Docente verifica fuentes (evitar Fake News).',
-                      'CIERRE: Intercambio de borradores entre parejas para co-evaluación.'
-                    ] 
-                  },
-                  { 
-                    num: 6, 
-                    obj: 'Taller de Oralidad', 
-                    actividades: [
-                      'INICIO: Proyección breve de debate político (análisis de lenguaje corporal).',
-                      'DESARROLLO: Ejercicios prácticos de pie.',
-                      'Volumen/Dicción: Leer trabalenguas con un lápiz en la boca.',
-                      'Postura: Practicar "Posición de Poder".',
-                      'Frases Puente: Practicar fórmulas para disentir con respeto ("Entiendo tu punto, sin embargo...").',
-                      'CIERRE: Ronda rápida de frases usando "puentes".'
-                    ] 
-                  },
-                  { 
-                    num: 7, 
-                    obj: 'Simulacro General', 
-                    actividades: [
-                      'INICIO: Organización de mobiliario en forma de herradura.',
-                      'DESARROLLO: Mini-ensayos simultáneos de 5 minutos.',
-                      'Selección de equipo piloto para dinámica real (5-7 min).',
-                      'Retroalimentación grupal técnica "Estrella y Deseo".',
-                      'CIERRE: Ajustes finales de cada equipo.'
-                    ] 
-                  }
-                ]
-              },
-              {
-                titulo: 'FASE 3: Ejecución y Evaluación (Cierre)',
-                sesiones: [
-                  { 
-                    num: 8, 
-                    obj: 'Mesas Redondas 1 y 2', 
-                    actividades: [
-                      'Mesa 1 (15 min): "Nuevos estudiantes en la secundaria" (Integración vs. Recursos).',
-                      'Mesa 2 (15 min): "Crisis del Agua y Sobrepoblación" (DDHH vs. Planeación).',
-                      'RETRO (10 min): El público identifica un argumento falaz y uno asertivo de cada mesa en su ficha de escucha.'
-                    ] 
-                  },
-                  { 
-                    num: 9, 
-                    obj: 'Mesas Redondas 3 y 4', 
-                    actividades: [
-                      'Mesa 3 (15 min): "Gentrificación: ¿Barrio para quién?" (Modernización vs. Identidad).',
-                      'Mesa 4 (15 min): "Empleo y Salarios en Monterrey" (Competitividad vs. Derechos Laborales).',
-                      'RETRO (10 min): Anotar qué datos estadísticos se mencionaron y verificar fuentes.'
-                    ] 
-                  },
-                  { 
-                    num: 10, 
-                    obj: 'Mesas Redondas 5 y 6', 
-                    actividades: [
-                      'Mesa 5 (15 min): "Lenguas Indígenas y Discriminación".',
-                      'Mesa 6 (15 min): "Seguridad y Derechos Humanos".',
-                      'CIERRE (10 min): Reflexión final sobre el PDA: "¿Cómo el diálogo intercultural y la comunicación asertiva nos ayudaron a entender estos conflictos?".',
-                      'Entrega de portafolio y rúbricas.'
-                    ] 
-                  }
-                ]
-              }
-            ]
-          },
-          'pda-ensayo': {
-            id: 'pda-ensayo',
-            trimestre: 2,
-            title: 'Elaboración de un ensayo crítico sobre inclusión comunitaria con investigación documental',
-            subject: 'Español II',
-            grado: '2º Secundaria',
-            pda: 'Expresa, mediante un ensayo, una postura crítica sobre necesidades, intereses y problemas de la comunidad.',
-            metodología: 'Investigación Documental y Redacción Académica',
-            ejes: ['Pensamiento Crítico', 'Inclusión', 'Apropiación de las culturas a través de la lectura y la escritura'],
-            perfil: ['Pensamiento Crítico y Reflexivo: Analiza la realidad para transformarla.', 'Comunicador: Utiliza el lenguaje para defender posturas éticas.'],
-            // ODS ACTUALIZADOS
-            ods: [
-                { id: 4, nombre: 'Educación de Calidad', color: '#C5192D', meta: 'Meta 4.7: Asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible.', cita: 'Agenda 2030, ONU' },
-                { id: 10, nombre: 'Reducción de las Desigualdades', color: '#DD1367', meta: 'Meta 10.3: Garantizar la igualdad de oportunidades y reducir la desigualdad de resultados.', cita: 'Agenda 2030, ONU' }
-            ],
-            identidad: 'Justicia Social: Voz para la comunidad y responsabilidad colectiva.',
-            materiales: 'Ejemplo modelo de ensayo sobre el Mundial 2026 en Monterrey, Guía de estructura del ensayo, checklist de entrega, formato APA 7, rúbrica de evaluación, libros de texto, recursos digitales (Google Scholar, Redalyc, Scielo), fichas bibliográficas.',
-            evaluacion: 'Sumativa: Rúbrica (24 pts). Formativa: Checklist por sesión, autoevaluaciones rápidas y checklist de libreta.',
-            color: 'emerald',
-            fases: [
-              {
-                titulo: 'Secuencia de Producción Escrita',
-                sesiones: [
-                  { 
-                    num: 1, 
-                    obj: 'Introducción al ensayo crítico y función creativa del español', 
-                    actividades: [
-                      'Explicar el propósito de la secuencia, destacando cómo el español permite expresar necesidades e intereses comunitarios, y ejemplificar con situaciones reales de la escuela y la comunidad.',
-                      'Analizar colectivamente situaciones cotidianas que requieren el uso creativo y responsable del lenguaje, fomentando el pensamiento crítico y la empatía mediante preguntas detonadoras y ejemplos.',
-                      'Exponer la estructura general del ensayo y los tipos de ensayos (argumentativo, expositivo, crítico y literario), comparando sus intenciones comunicativas con ejemplos representativos y promoviendo la reflexión.',
-                      'Presentar la consigna del producto final: elegir un tema local o escolar y escribir un ensayo argumentativo de 1–1.5 cuartillas, siguiendo el checklist y la rúbrica de evaluación, además de registrar en la libreta los criterios clave.',
-                      'Realizar una autoevaluación rápida al final de la sesión, donde cada estudiante valore su comprensión sobre la función creativa del español, los tipos de ensayo y la estructura básica, anotando dudas o intereses para la siguiente clase.'
-                    ] 
-                  },
-                  { 
-                    num: 2, 
-                    obj: 'Tipos de argumentos y análisis de textos modelo', 
-                    actividades: [
-                      'Definir los tipos principales de argumentos (hecho, causa, autoridad, ejemplo y analogía), explicando con ejemplos su función para sustentar la tesis en el ensayo crítico y promoviendo la identificación en textos reales.',
-                      'Analizar el ejemplo modelo del Mundial 2026 en Monterrey, identificando la tesis, argumentos utilizados y propuestas de acción colectiva, aplicando la rúbrica de evaluación para valorar la estructura y calidad del texto.',
-                      'Ejercitar en equipos la formulación de argumentos sobre temas de interés escolar, utilizando datos objetivos, citas de expertos de bases académicas y ejemplos cercanos, fomentando el trabajo colaborativo y el debate respetuoso.',
-                      'Distinguir entre hechos y opiniones en textos argumentativos, promoviendo la ética informativa y el respeto por la diversidad de posturas dentro de la comunidad escolar, registrando ejemplos en la libreta.',
-                      'Al cierre, aplicar una autoevaluación rápida donde cada estudiante identifique qué tipo de argumento le resultó más fácil o difícil de emplear, y anote un ejemplo propio, facilitando la metacognición y la preparación para la siguiente sesión.'
-                    ] 
-                  },
-                  { 
-                    num: 3, 
-                    obj: 'Investigación documental, selección de fuentes y fichas bibliográficas', 
-                    actividades: [
-                      'Explicar los criterios para seleccionar fuentes confiables, incluyendo documentos oficiales, bases de datos académicas (Google Scholar, Redalyc, Scielo) y notas periodísticas, resaltando la importancia de la pluralidad y actualidad de las fuentes.',
-                      'Analizar ejemplos de fichas bibliográficas bien elaboradas para identificar los elementos indispensables y evitar errores comunes en la citación.',
-                      'Realizar investigación documental utilizando fichas bibliográficas para registrar información clave de al menos tres fuentes distintas, asegurando el correcto formato APA 7 y la organización de las referencias.',
-                      'Comparar fuentes de información sobre un mismo tema para distinguir diferencias entre hechos y opiniones, fomentando el pensamiento crítico.',
-                      'Redactar individualmente la introducción y la tesis del ensayo, explicando la relevancia personal y comunitaria del tema, y compartir avances en Teams para recibir retroalimentación inicial del docente y los pares.',
-                      'Registrar en la libreta los criterios de selección de fuentes, las preguntas de indagación, los registros de fichas bibliográficas, el borrador de introducción y tesis, y reflexionar sobre la utilidad de la investigación documental.',
-                      'Aplicar una autoevaluación rápida al cierre, en la que cada estudiante valore la calidad y variedad de sus fuentes, identifique un área de mejora en su proceso de investigación y defina un objetivo para la siguiente sesión.'
-                    ] 
-                  },
-                  { 
-                    num: 4, 
-                    obj: 'Redacción y desarrollo del borrador argumentativo', 
-                    actividades: [
-                      'Desarrollar al menos dos argumentos distintos respaldados por evidencia documental, incorporando ejemplos y datos obtenidos en la investigación y anotando cada avance en la libreta y en las fichas bibliográficas.',
-                      'Integrar un contraargumento y su refutación, mostrando capacidad de análisis crítico y respeto por otras posturas, asegurando que el texto mantenga coherencia, claridad y esté fundamentado en fuentes académicas o periodísticas.',
-                      'Organizar el texto empleando conectores adecuados, lenguaje formal y cumplimiento de las normas ortográficas, revisando la estructura y la claridad del borrador en colaboración con los compañeros.',
-                      'Compartir el borrador en Teams para recibir retroalimentación del docente y de los pares, utilizando la rúbrica para identificar áreas de mejora y fortalecer el texto final, registrando sugerencias en la libreta.',
-                      'Checklist de libreta: borrador de argumentos, contraargumento y refutación, organización del texto, registro de retroalimentación recibida, plan de mejora y revisión de las fuentes utilizadas.',
-                      'Realizar una autoevaluación rápida en la que los estudiantes valoren la solidez de sus argumentos y la integración de la evidencia documental, identificando un aspecto específico a mejorar antes de la revisión final.'
-                    ] 
-                  },
-                  { 
-                    num: 5, 
-                    obj: 'Revisión colaborativa, metacognición y entrega del producto final', 
-                    actividades: [
-                      'Intercambiar borradores por parejas para subrayar elementos clave (tesis, argumentos, evidencia, propuesta de acción colectiva) y aplicar la rúbrica de evaluación, promoviendo la retroalimentación respetuosa y constructiva.',
-                      'Completar el exit ticket individual, reflexionando sobre el proceso de escritura, la postura defendida, la calidad de los argumentos y el uso de fuentes, registrando las respuestas y aprendizajes en la libreta.',
-                      'Preparar la versión final del ensayo, integrando las sugerencias recibidas, asegurando el cumplimiento de los criterios de evaluación establecidos en la rúbrica y revisando la bibliografía en formato APA 7.',
-                      'Subir el ensayo final en formato PDF a Teams, junto con la bibliografía y el checklist de notas de la libreta como evidencia del proceso, asegurando la entrega oportuna y la organización de los anexos.',
-                      'Checklist de libreta: registro de revisión colaborativa, reflexión metacognitiva, rúbrica aplicada, confirmación de entrega en Teams y autoevaluación final sobre el proceso de aprendizaje y producción.',
-                      'Evaluación sumativa: el producto final será calificado conforme a la rúbrica (24 puntos), considerando estructura, argumentación, evidencias, contraargumento, coherencia, lenguaje y propuesta inclusiva.',
-                      'Evaluación formativa: se considerará la calidad y completitud de las notas en la libreta, el uso del checklist por sesión, la participación en actividades prácticas y la calidad de las autoevaluaciones rápidas realizadas.'
-                    ] 
-                  }
-                ]
-              }
-            ]
-          },
-          'pda-periodismo': {
-            id: 'pda-periodismo',
-            trimestre: 2,
-            title: 'Géneros Periodísticos de Opinión y Producción Crítica en la Comunidad',
-            subject: 'Español',
-            grado: '8° Secundaria',
-            pda: 'Investiga un evento familiar, escolar o comunitario significativo para comunicarlo utilizando las características de los géneros periodísticos de opinión.',
-            metodología: 'Investigación Periodística y Análisis de Medios',
-            ejes: ['Pensamiento Crítico', 'Apropiación de las culturas a través de la lectura y la escritura', 'Vida Saludable (Compromiso Social)'],
-            perfil: ['Ciudadano Comprometido: Participa en la transformación social.', 'Comunicador: Utiliza medios para difundir la verdad.'],
-            // ODS ACTUALIZADOS
-            ods: [
-                 { id: 16, nombre: 'Paz, Justicia e Instituciones Sólidas', color: '#00689D', meta: 'Meta 16.10: Garantizar el acceso público a la información y proteger las libertades fundamentales, de conformidad con las leyes nacionales y los acuerdos internacionales.', cita: 'Agenda 2030, ONU' }
-            ],
-            identidad: 'Fraternidad: Memoria colectiva y compromiso con la verdad.',
-            materiales: 'Cuaderno, lápiz, bolígrafo, ejemplos de artículos/columnas/editoriales, dispositivos electrónicos, guía de estructura, plantillas para citas.',
-            evaluacion: 'Evaluación formativa continua (esquemas, borradores, debates). Evaluación sumativa mediante producto escrito (estructura, argumentación, citación, relevancia).',
-            color: 'orange',
-            fases: [
-              {
-                titulo: 'Secuencia de Géneros de Opinión',
-                sesiones: [
-                  { 
-                    num: 1, 
-                    obj: 'Explorando los Géneros Periodísticos de Opinión', 
-                    actividades: [
-                      'Presentación introductoria sobre los géneros periodísticos de opinión: artículo, columna, editorial y carta al director, con ejemplos actuales cercanos a la comunidad.',
-                      'Comparación de propósitos, estilos y destinatarios de cada género mediante una actividad de clasificación colaborativa en equipos pequeños.',
-                      'Análisis de la diferencia entre lenguaje subjetivo y objetivo en los textos de opinión, destacando cómo se expresan posturas y fomentan el debate social.',
-                      'Lluvia de ideas sobre temas significativos que afectan a la memoria colectiva local, escolar o familiar, motivando la participación crítica de los estudiantes.',
-                      'Cada equipo selecciona un género y expone brevemente su función y relevancia en la sociedad, utilizando ejemplos concretos y recursos multimedia.'
-                    ] 
-                  },
-                  { 
-                    num: 2, 
-                    obj: 'Desglosando la Estructura de los Textos de Opinión', 
-                    actividades: [
-                      'Estudio de las partes esenciales de los textos de opinión: título atractivo, firma, fecha, introducción con tesis, cuerpo argumentativo y conclusión reflexiva, usando modelos reales de periódicos.',
-                      'Análisis de ejemplos de títulos expresivos y práctica de redacción de encabezados que motiven la lectura y resalten la importancia del tema tratado.',
-                      'Organización de ideas en esquemas gráficos, identificando la función de cada parte y practicando la redacción de introducciones y conclusiones persuasivas.',
-                      'Discusión sobre el uso de voz activa y pasiva, y cómo la claridad y coherencia influyen en la comprensión y la fuerza del argumento.',
-                      'Ejercicio grupal donde cada estudiante construye la estructura base de un texto de opinión sobre un suceso relevante de su entorno.'
-                    ] 
-                  },
-                  { 
-                    num: 3, 
-                    obj: 'Distinguiendo Hechos y Opiniones en Textos Periodísticos', 
-                    actividades: [
-                      'Explicación de la diferencia entre hechos verificables (datos, cifras, nombres, fechas) y opiniones (valoraciones personales explícitas o implícitas) en textos periodísticos.',
-                      'Subrayado y clasificación de información en ejemplos reales, identificando frases que representan hechos y aquellas que expresan opiniones.',
-                      'Uso de casos prácticos, como el análisis de textos sobre contaminación por plásticos, para practicar la justificación de cada tipo de información.',
-                      'Reflexión sobre la importancia de sustentar argumentos con hechos para fortalecer la credibilidad y la participación responsable en la vida social.',
-                      'Juego interactivo donde el grupo debate si ciertas afirmaciones son hechos u opiniones, justificando sus respuestas con argumentos sólidos.'
-                    ] 
-                  },
-                  { 
-                    num: 4, 
-                    obj: 'Citación de Fuentes y Producción de Textos de Opinión', 
-                    actividades: [
-                      'Enseñanza sobre la importancia de citar fuentes confiables para respaldar argumentos, diferenciando entre cita textual y paráfrasis.',
-                      'Práctica de redacción de citas textuales e indirectas usando datos de organismos reconocidos, mencionando siempre la fuente.',
-                      'Presentación de frases útiles para introducir citas y análisis de ejemplos en textos periodísticos.',
-                      'Actividad en parejas para integrar una cita textual y una paráfrasis en un breve párrafo de opinión sobre un tema local.',
-                      'Reflexión sobre la ética y la transparencia en el uso de fuentes, promoviendo el respeto por la propiedad intelectual y la veracidad de la información.'
-                    ] 
-                  },
-                  { 
-                    num: 5, 
-                    obj: 'Redacción Final, Presentación y Evaluación', 
-                    actividades: [
-                      'El alumnado organiza sus ideas y redacta el borrador final de su texto de opinión sobre un evento relevante, cuidando la estructura y citación aprendida.',
-                      'Revisión en parejas utilizando la lista de verificación para asegurar coherencia, claridad, corrección ortográfica y adecuada citación de fuentes.',
-                      'Presentación oral de los textos ante el grupo, explicando el evento investigado, la postura y las propuestas planteadas.',
-                      'Retroalimentación colectiva y evaluación formativa, destacando la argumentación, uso de hechos y opiniones, y citación de fuentes.',
-                      'Evaluación sumativa mediante un producto escrito, considerando los criterios: estructura, argumentación, citación, relevancia y compromiso social.',
-                      'Evaluación formativa continua durante la revisión de esquemas, borradores y participación en debates, observando el desarrollo de habilidades analíticas y argumentativas.',
-                      'Retroalimentación individual y grupal sobre la claridad de las posturas, la correcta distinción entre hechos y opiniones, y la pertinencia de las fuentes citadas.',
-                      'Registro de evidencias de aprendizaje mediante rúbricas y listas de cotejo que permitan valorar el progreso y logro de los objetivos establecidos.',
-                      'El producto escrito será publicado en el periódico escolar o mural comunitario, promoviendo el compromiso social y la participación activa.'
-                    ] 
-                  }
-                ]
-              }
-            ]
-          },
-          'pda-mural': {
-            id: 'pda-mural',
-            trimestre: 2,
-            title: 'Manifestaciones culturales y artísticas',
-            subject: 'Español',
-            grado: '8° Secundaria',
-            pda: 'Elabora un texto oral o escrito acerca de las manifestaciones culturales y artísticas que promuevan una sociedad incluyente.',
-            metodología: 'Aprendizaje Basado en el Arte (Muralismo Mexicano)',
-            ejes: ['Artes y Experiencias Estéticas', 'Interculturalidad Crítica', 'Inclusión'],
-            perfil: ['Sensibilidad Estética: Valora el arte como medio de expresión.', 'Ciudadano Comprometido: Promueve la inclusión y la diversidad.'],
-            // ODS ACTUALIZADOS
-            ods: [
-                { id: 4, nombre: 'Educación de Calidad', color: '#C5192D', meta: 'Meta 4.7: Asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible y los estilos de vida sostenibles.', cita: 'Agenda 2030, ONU' },
-                { id: 16, nombre: 'Paz, Justicia e Instituciones Sólidas', color: '#00689D', meta: 'Meta 16.1: Reducir significativamente todas las formas de violencia y las tasas de mortalidad conexas en todo el mundo.', cita: 'Agenda 2030, ONU' }
-            ],
-            identidad: 'Justicia: El arte como denuncia y constructor de equidad.',
-            materiales: 'Imágenes impresas y digitales de murales (Rivera, Siqueiros, Orozco, Reyes, Tamayo, Camarena), plantillas de estructura, rúbrica de evaluación, proyector, computadora, materiales para recursos visuales.',
-            evaluacion: 'Formativa: Portafolio de evidencias (esquemas, borradores). Sumativa: Crítica argumentada y exposición oral + murales representativos.',
-            color: 'purple',
-            fases: [
-              {
-                titulo: 'Secuencia Muralismo e Inclusión',
-                sesiones: [
-                  { 
-                    num: 1, 
-                    obj: 'Introducción y Formación de Equipos', 
-                    actividades: [
-                      'Presentar el propósito de la secuencia y contextualizar la importancia de los murales mexicanos en la construcción de una sociedad incluyente.',
-                      'Realizar una lluvia de ideas sobre manifestaciones culturales y artísticas, destacando la diversidad y riqueza del muralismo nacional.',
-                      'Exponer los Objetivos de Desarrollo Sostenible (ODS 4.7 y 16) y los valores del Modelo Educativo Lasallista relacionados con la inclusión y justicia social.',
-                      'Formar seis equipos, asignando a cada uno un muralista mexicano distinto y explicando el reto: investigar la obra, contexto y relevancia del artista para la inclusión.',
-                      'Iniciar la investigación guiada sobre el muralista asignado, utilizando recursos impresos y digitales, y registrando hallazgos en el portafolio.'
-                    ] 
-                  },
-                  { 
-                    num: 2, 
-                    obj: 'Análisis de Murales y Organización de Ideas', 
-                    actividades: [
-                      'Observar y analizar en grupo imágenes de los murales seleccionados, identificando elementos visuales, símbolos y mensajes relacionados con la inclusión y diversidad.',
-                      'Guiar a los equipos en la investigación del contexto histórico-social de la obra y del artista, profundizando en cómo abordan temas de justicia, equidad y pluralidad.',
-                      'Utilizar plantillas para organizar ideas principales y argumentos sobre la relevancia del mural en la sociedad mexicana.',
-                      'Fomentar la discusión en plenaria sobre la importancia de los murales para la identidad y cohesión social, registrando conclusiones en el portafolio.',
-                      'Asignar la tarea de recopilar información adicional sobre técnicas artísticas y simbolismo para fortalecer el análisis crítico.'
-                    ] 
-                  },
-                  { 
-                    num: 3, 
-                    obj: 'Redacción de la Crítica Argumentada', 
-                    actividades: [
-                      'Explicar la estructura de la crítica argumentada (introducción, desarrollo y conclusión) y mostrar ejemplos claros para orientar la redacción.',
-                      'Proporcionar guías, conectores y vocabulario especializado para que los equipos elaboren el esquema y el primer borrador de su crítica.',
-                      'Supervisar el trabajo colaborativo, asegurando el uso de fuentes confiables y la fundamentación de los argumentos en información verídica.',
-                      'Realizar una revisión inicial entre equipos, utilizando una lista de cotejo para identificar áreas de mejora y registrar retroalimentación en el portafolio.',
-                      'Fortalecer la redacción de la crítica, integrando reflexiones sobre inclusión, diversidad y el impacto social del mural analizado.'
-                    ] 
-                  },
-                  { 
-                    num: 4, 
-                    obj: 'Revisión, Elaboración de Recursos Visuales y Ensayo de Exposición', 
-                    actividades: [
-                      'Revisar y corregir los textos argumentativos en equipo, aplicando la rúbrica de evaluación y asegurando el cumplimiento de los criterios de inclusión y diversidad.',
-                      'Elaborar recursos visuales para la exposición, como carteles, infografías o presentaciones digitales que representen el mural y los argumentos clave.',
-                      'En equipos, preparar la exposición oral, asignando roles y tiempos para cada integrante y ensayando la presentación frente a sus compañeros.',
-                      'Registrar en el portafolio los avances, dificultades y estrategias de mejora identificadas durante el ensayo y la elaboración de recursos.',
-                      'Recibir retroalimentación formativa del docente y compañeros, ajustando la exposición y los materiales visuales según las sugerencias recibidas.'
-                    ] 
-                  },
-                  { 
-                    num: 5, 
-                    obj: 'Exposición, Evaluación y Reflexión Final', 
-                    actividades: [
-                      'Realizar la exposición oral de las críticas argumentadas por equipo, presentando los recursos visuales y explicando cómo el mural contribuye a la inclusión social.',
-                      'Fomentar la participación del público con preguntas y comentarios breves, promoviendo el respeto y la escucha activa entre los equipos.',
-                      'Aplicar la evaluación sumativa mediante la rúbrica y la lista de cotejo, registrando los resultados y observaciones en el portafolio de cada equipo.',
-                      'Reflexionar grupalmente sobre los aprendizajes, desafíos y logros alcanzados, destacando la importancia de la crítica artística para la inclusión y la diversidad cultural.',
-                      'Motivar a los estudiantes a proponer nuevas formas de difundir la inclusión y la valoración de la diversidad en su entorno escolar y comunitario, registrando propuestas en el portafolio.'
-                    ] 
-                  }
-                ]
-              }
-            ]
-          },
-          'pda-salud': {
-            id: 'pda-salud',
-            trimestre: 2,
-            title: 'Secuencia de creación de tríptico informativo sobre vida saludable',
-            subject: 'Español',
-            grado: '2º Secundaria',
-            pda: 'Elabora un mensaje impreso empleando imágenes, textos, colores y otros recursos gráficos, para favorecer una vida saludable, y lo comparte en la comunidad.',
-            metodología: 'Aprendizaje Basado en Proyectos (Diseño Social)',
-            ejes: ['Vida Saludable', 'Pensamiento Crítico', 'Artes y Experiencias Estéticas'],
-            perfil: ['Responsabilidad Social: Cuida su salud y promueve el bienestar.', 'Comunicador: Diseña mensajes claros y éticos.'],
-            // ODS ACTUALIZADOS
-            ods: [
-                { id: 3, nombre: 'Salud y Bienestar', color: '#4C9F38', meta: 'Meta 3.4: Reducir la mortalidad prematura por enfermedades no transmisibles mediante la prevención y el tratamiento y promover la salud mental y el bienestar.', cita: 'Agenda 2030, ONU' },
-                { id: 4, nombre: 'Educación de Calidad', color: '#C5192D', meta: 'Meta 4.7: Asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible.', cita: 'Agenda 2030, ONU' }
-            ],
-            identidad: 'Fraternidad: Cuidado mutuo, servicio a la comunidad y promoción de la salud como derecho humano.',
-            materiales: 'Plantilla básica para tríptico, banco de fuentes confiables (OMS, UNICEF), ejemplos de trípticos, glosario, materiales para diseño gráfico (Canva, tijeras, pegamento).',
-            evaluacion: 'Evaluación formativa: Observación, organizadores gráficos, borradores. Sumativa: Tríptico impreso, presentación oral y exit ticket.',
-            color: 'rose',
-            fases: [
-              {
-                titulo: 'Secuencia Diseño de Trípticos',
-                sesiones: [
-                  { 
-                    num: 1, 
-                    obj: 'Introducción y análisis del tríptico informativo', 
-                    actividades: [
-                      'Presenta ejemplos de trípticos reales y guía a los estudiantes en el análisis de su estructura, diseño y función comunicativa en el contexto de la promoción de la salud.',
-                      'Identifica junto con el grupo los elementos clave del tríptico: portada, introducción, desarrollo de subtemas, recomendaciones y contraportada con fuentes, resaltando el uso de recursos gráficos y lingüísticos.',
-                      'Explica la relevancia de emplear imágenes, títulos claros y colores coherentes para captar la atención y facilitar la comprensión del mensaje.',
-                      'Relaciona el tríptico con medios comunitarios y masivos de comunicación, destacando su utilidad para difundir mensajes sobre vida saludable en la comunidad escolar.',
-                      'Inicia una lluvia de ideas sobre temas de salud física y mental que sean relevantes para los estudiantes y su entorno, registrando las propuestas para las siguientes sesiones.',
-                      'Consigna para los alumnos: Observa los ejemplos de trípticos y anota las características que consideras esenciales para comunicar información confiable sobre salud.',
-                      'Evaluación formativa: Participación en el análisis y lluvia de ideas; observaciones escritas sobre los elementos del tríptico.'
-                    ] 
-                  },
-                  { 
-                    num: 2, 
-                    obj: 'Búsqueda e investigación de información confiable', 
-                    actividades: [
-                      'Guía a los estudiantes en la identificación de fuentes confiables utilizando el banco de apoyo (OMS, Secretaría de Salud, UNICEF), diferenciando entre información científica y opiniones personales.',
-                      'Organiza una actividad de búsqueda colaborativa en equipos, seleccionando datos, recomendaciones y ejemplos que respondan a necesidades reales de la comunidad escolar.',
-                      'Integra conceptos de salud física y mental, incluyendo alimentación, descanso, actividad física y bienestar emocional, según el interés del grupo, documentando los hallazgos en un organizador gráfico.',
-                      'Promueve la reflexión sobre la responsabilidad ética al comunicar información sobre salud, considerando el impacto social y los valores Lasallistas.',
-                      'Consigna para los alumnos: Elabora un organizador gráfico donde clasifiques la información encontrada según los paneles del tríptico.',
-                      'Evaluación formativa: Revisión de los organizadores gráficos y discusión sobre la confiabilidad de las fuentes utilizadas.'
-                    ] 
-                  },
-                  { 
-                    num: 3, 
-                    obj: 'Redacción y organización del contenido', 
-                    actividades: [
-                      'Explica cómo redactar textos informativos claros, coherentes y persuasivos, empleando conectores, lenguaje inclusivo y tono respetuoso para cada sección del tríptico.',
-                      'Asesora a los equipos en la organización de la información en los paneles del tríptico, asegurando que cada sección cumpla con su función comunicativa y que el mensaje sea comprensible.',
-                      'Revisa la integración de recursos gráficos: títulos atractivos, imágenes pertinentes y uso adecuado de colores para reforzar el mensaje y facilitar la lectura.',
-                      'Promueve la inclusión de recomendaciones prácticas y fundamentadas, vinculando el contenido con los Objetivos de Desarrollo Sostenible (ODS 3 y 4.7) y los valores Lasallistas.',
-                      'Fomenta la autoevaluación y revisión entre pares para mejorar la claridad, coherencia y propósito social del tríptico antes de pasar al diseño final.',
-                      'Consigna para los alumnos: Redacta los textos informativos para cada sección del tríptico y revisa el contenido con tu equipo antes de continuar al diseño gráfico.',
-                      'Evaluación formativa: Revisión de borradores escritos y retroalimentación entre pares sobre la claridad y coherencia del contenido.'
-                    ] 
-                  },
-                  { 
-                    num: 4, 
-                    obj: 'Diseño gráfico y elaboración del tríptico', 
-                    actividades: [
-                      'Orienta a los estudiantes en el uso de herramientas digitales (Canva, Google Slides) o materiales impresos para crear un diseño funcional y atractivo que facilite la comunicación del mensaje.',
-                      'Supervisa la selección de imágenes, colores y fuentes tipográficas que refuercen el mensaje y faciliten la lectura del tríptico, asegurando la coherencia visual en todo el material.',
-                      'Asegura que cada panel del tríptico incluya los elementos esenciales: portada con título e imagen, desarrollo de subtemas, recomendaciones y contraportada con fuentes confiables.',
-                      'Propicia el trabajo colaborativo, asignando roles específicos dentro de los equipos para la elaboración y revisión del diseño gráfico, promoviendo la responsabilidad compartida.',
-                      'Incorpora una breve autoevaluación grupal, verificando que el tríptico cumpla con los criterios de claridad, confiabilidad, diseño y propósito social definidos en la rúbrica.',
-                      'Consigna para los alumnos: Realiza el diseño gráfico del tríptico en equipo y verifica que todos los elementos estén presentes antes de imprimir o compartir digitalmente.',
-                      'Evaluación formativa: Observación de la colaboración y revisión del diseño gráfico; autoevaluación grupal sobre el cumplimiento de los criterios establecidos.'
-                    ] 
-                  },
-                  { 
-                    num: 5, 
-                    obj: 'Presentación, evaluación sumativa y reflexión final', 
-                    actividades: [
-                      'Organiza una exposición grupal donde los equipos presenten sus trípticos ante la clase y, si es posible, ante miembros de la comunidad escolar, fomentando la comunicación oral y el trabajo colaborativo.',
-                      'Aplica la rúbrica breve para evaluar los productos escritos, considerando los criterios de claridad, confiabilidad, diseño gráfico y propósito social (ODS + valores Lasallistas).',
-                      'Facilita una coevaluación entre equipos, permitiendo retroalimentación constructiva sobre los trípticos elaborados y promoviendo el aprendizaje entre pares.',
-                      'Realiza el exit ticket individual, donde cada estudiante reflexiona sobre cómo comunicar información confiable y qué hábito saludable se compromete a mejorar a partir de lo aprendido.',
-                      'Concluye con una reflexión grupal sobre la importancia del trabajo colaborativo, el servicio a la comunidad y la promoción de la salud como derecho humano, vinculando los aprendizajes con los valores Lasallistas.',
-                      'Consigna para los alumnos: Presenta tu tríptico y responde el exit ticket sobre comunicación confiable y hábitos saludables.',
-                      'Evaluación sumativa: Producto escrito (tríptico informativo), presentación oral y exit ticket; aplicación de la rúbrica para calificar el trabajo final.'
-                    ] 
-                  }
-                ]
-              }
-            ]
-          }
-        };
+        const FolderOpen = (props) => <IconBase {...props} d={<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>} />;
 
         // --- COMPONENTE DE FORMATO DE IMPRESIÓN (REUTILIZABLE) ---
         const PrintableFormat = ({ data }) => (
@@ -739,22 +240,43 @@
 
         // --- COMPONENTE PRINCIPAL (APP) ---
         const App = () => {
-          const [view, setView] = useState('home'); // home, gallery, detail
+          const [view, setView] = useState('home'); 
           const [selectedSubject, setSelectedSubject] = useState(null);
           const [currentPdaId, setCurrentPdaId] = useState(null);
           const [activeTrimestre, setActiveTrimestre] = useState(2);
-          
-          // Estados para impresión masiva
           const [showPrintModal, setShowPrintModal] = useState(false);
           const [batchPrintData, setBatchPrintData] = useState(null);
+          
+          // NUEVO: Estado para datos externos
+          const [pdaData, setPdaData] = useState([]);
+          const [loading, setLoading] = useState(true);
 
-          // Obtener datos del PDA actual si está seleccionado
-          const currentData = currentPdaId ? PDA_DATA[currentPdaId] : null;
+          // EFECTO PARA CARGAR DATOS
+          useEffect(() => {
+            fetch('./data.json')
+              .then(response => response.json())
+              .then(data => {
+                setPdaData(data);
+                setLoading(false);
+              })
+              .catch(error => {
+                console.error("Error al cargar data.json:", error);
+                // Fallback silencioso por si falla la carga local
+                setLoading(false);
+              });
+          }, []);
 
-          // Filtrar PDAs por trimestre para la galería y la impresión masiva
+          // Obtener datos del PDA actual
+          const currentData = currentPdaId ? pdaData.find(p => p.id === currentPdaId) : null;
+
+          // Filtrar PDAs por trimestre Y por materia seleccionada (NUEVO FILTRO)
           const filteredPDAs = useMemo(() => {
-              return Object.values(PDA_DATA).filter(p => p.trimestre === activeTrimestre);
-          }, [activeTrimestre]);
+              return pdaData.filter(p => {
+                  const matchTrimestre = p.trimestre === activeTrimestre;
+                  const matchSubject = selectedSubject ? p.subject === selectedSubject : true;
+                  return matchTrimestre && matchSubject;
+              });
+          }, [activeTrimestre, pdaData, selectedSubject]);
 
           const handleSelectSubject = (subject) => {
               setSelectedSubject(subject);
@@ -768,38 +290,46 @@
               setBatchPrintData(null);
           };
 
-          // Función para ejecutar la impresión masiva
           const handleBatchPrint = (trimestre) => {
-             // 1. Filtrar todos los PDAs del trimestre seleccionado
-             const dataToPrint = Object.values(PDA_DATA).filter(p => p.trimestre === trimestre);
+             // Imprimir solo lo que corresponde a la materia seleccionada en ese trimestre
+             const dataToPrint = pdaData.filter(p => 
+                p.trimestre === trimestre && 
+                (selectedSubject ? p.subject === selectedSubject : true)
+             );
              
              if(dataToPrint.length === 0) {
-                 alert("No hay planeaciones registradas para este trimestre aún.");
+                 alert("No hay planeaciones registradas para este periodo.");
                  return;
              }
 
-             // 2. Establecer datos para renderizar en el bloque oculto
              setBatchPrintData(dataToPrint);
              setShowPrintModal(false);
 
-             // 3. Esperar un momento a que React renderice y lanzar impresión
              setTimeout(() => {
                  window.print();
-                 // Limpiar después de imprimir (opcional, pero ahorra memoria DOM)
-                 // setBatchPrintData(null); 
              }, 500);
           };
 
           const handleSinglePrint = () => window.print();
 
-          // --- RENDERIZADO CONDICIONAL ---
+          // Render de Carga
+          if (loading) {
+             return (
+                 <div className="min-h-screen flex items-center justify-center bg-slate-50">
+                     <div className="text-center">
+                        <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-[#003057] mx-auto mb-4"></div>
+                        <p className="text-[#003057] font-bold">Cargando Planeaciones...</p>
+                     </div>
+                 </div>
+             )
+          }
 
           // 1. Vista Home
           if (view === 'home') {
               return <HomeView onSelectSubject={handleSelectSubject} />;
           }
 
-          // 2. Vista Detalle (Impresión individual funciona aquí porque el layout cambia con CSS)
+          // 2. Vista Detalle
           if (currentPdaId && currentData) {
              return (
                  <div className="min-h-screen bg-[#f8fafc]">
@@ -811,7 +341,6 @@
                         />
                         <DetailViewContent data={currentData} />
                     </div>
-                    {/* Bloque de impresión individual - Ahora oculto por defecto con CSS y solo visible al imprimir */}
                     <div className="print-only">
                         <PrintableFormat data={currentData} />
                     </div>
@@ -819,10 +348,9 @@
              );
           }
 
-          // 3. Vista Galería (Por Asignatura)
+          // 3. Vista Galería
           return (
             <div className="min-h-screen bg-[#f1f5f9] antialiased">
-                {/* Header Galería */}
                 <header className="bg-[#003057] text-white shadow-xl sticky top-0 z-50 no-print border-b-4 border-[#D4AF37]">
                     <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                         <div className="flex items-center space-x-4">
@@ -830,7 +358,7 @@
                                 <ArrowLeft className="w-5 h-5" />
                             </button>
                             <div>
-                                <h1 className="text-lg font-black uppercase tracking-tight">{selectedSubject}</h1>
+                                <h1 className="text-lg font-black uppercase tracking-tight">{selectedSubject || 'Todas las Materias'}</h1>
                                 <p className="text-[10px] text-yellow-400 font-bold uppercase">Ciclo Escolar 2025-2026</p>
                             </div>
                         </div>
@@ -844,7 +372,6 @@
                 </header>
 
                 <main className="max-w-7xl mx-auto px-4 py-8 no-print fade-in">
-                    {/* Tabs de Trimestre */}
                     <div className="flex justify-center mb-10">
                         <div className="bg-white p-1 rounded-xl shadow-sm border border-gray-200 inline-flex">
                             {[1, 2, 3].map(t => (
@@ -863,7 +390,6 @@
                         </div>
                     </div>
 
-                    {/* Grid de Tarjetas */}
                     {filteredPDAs.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {filteredPDAs.map(pda => (
@@ -873,12 +399,11 @@
                     ) : (
                         <div className="text-center py-20 opacity-50">
                             <FolderOpen className="w-16 h-16 mx-auto mb-4 text-gray-300" />
-                            <p className="text-gray-400 font-medium">No hay secuencias cargadas para este trimestre.</p>
+                            <p className="text-gray-400 font-medium">No hay secuencias cargadas para este trimestre en {selectedSubject}.</p>
                         </div>
                     )}
                 </main>
 
-                {/* MODAL DE SELECCIÓN DE IMPRESIÓN */}
                 {showPrintModal && (
                     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center no-print">
                         <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl animate-in zoom-in duration-200">
@@ -886,7 +411,7 @@
                                 <h3 className="text-xl font-black text-[#003057] uppercase">Impresión por Lotes</h3>
                                 <button onClick={() => setShowPrintModal(false)} className="text-gray-400 hover:text-red-500"><X /></button>
                             </div>
-                            <p className="text-sm text-gray-600 mb-6">Selecciona el periodo que deseas imprimir. Se generará un solo archivo PDF conteniendo todas las secuencias del trimestre.</p>
+                            <p className="text-sm text-gray-600 mb-6">Selecciona el periodo que deseas imprimir para <strong>{selectedSubject}</strong>. Se generará un PDF consolidado.</p>
                             
                             <div className="space-y-3">
                                 {[1, 2, 3].map(t => (
@@ -904,8 +429,6 @@
                     </div>
                 )}
 
-                {/* --- CONTENEDOR OCULTO PARA IMPRESIÓN MASIVA --- */}
-                {/* Solo visible al imprimir si batchPrintData tiene datos */}
                 <div className="print-only">
                     {batchPrintData && batchPrintData.map((pda, index) => (
                         <div key={pda.id} className={index > 0 ? "page-break" : ""}>
@@ -930,7 +453,7 @@
                          <span className={`bg-${data.color}-100 text-${data.color}-700 p-3 rounded-2xl`}>
                             <FileText className="w-6 h-6" />
                          </span>
-                         <span className="text-[10px] font-black text-gray-300 uppercase">PDA-{data.id.split('-')[1]}</span>
+                         <span className="text-[10px] font-black text-gray-300 uppercase">PDA-{data.id.split('-').length > 1 ? data.id.split('-')[1] : '01'}</span>
                     </div>
                     <h3 className="text-lg font-black text-[#003057] mb-2 leading-tight group-hover:text-blue-600 transition-colors">
                         {data.title}
@@ -962,25 +485,17 @@
             const [activeFase, setActiveFase] = useState(0);
             return (
                 <div className="max-w-7xl mx-auto px-4 py-8 space-y-8 fade-in">
-                    
-                    {/* DASHBOARD GRID: ACADÉMICO (IZQ) + IDENTIDAD (DER) */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        
-                        {/* COLUMNA PRINCIPAL: MARCO CURRICULAR NEM */}
                         <div className="lg:col-span-2 space-y-6">
-                            
-                            {/* Tarjeta PDA & Metodología */}
                             <div className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-8 -mt-8 z-0"></div>
                                 <h3 className="relative z-10 text-sm font-black text-[#003057] uppercase mb-6 flex items-center border-b border-gray-100 pb-2">
                                     <LayoutDashboard className="w-4 h-4 mr-2 text-blue-600"/> Marco Curricular NEM
                                 </h3>
-                                
                                 <div className="relative z-10 bg-blue-50/50 p-6 rounded-xl border-l-4 border-blue-500 mb-6">
                                     <span className="text-[10px] font-black text-blue-800 uppercase mb-2 block tracking-widest">PDA (Proceso de Desarrollo de Aprendizaje)</span>
                                     <p className="text-gray-800 font-medium leading-relaxed italic text-lg">"{data.pda}"</p>
                                 </div>
-
                                 <div className="relative z-10 grid md:grid-cols-2 gap-6">
                                     <div>
                                         <span className="text-[10px] font-bold text-gray-400 uppercase block mb-3">Metodología Didáctica</span>
@@ -1001,8 +516,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                             {/* Gestión de Clase: Materiales y Evaluación */}
                             <div className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
                                 <h3 className="text-sm font-black text-[#003057] uppercase mb-6 flex items-center border-b border-gray-100 pb-2">
                                      <ClipboardList className="w-4 h-4 mr-2 text-blue-600"/> Gestión de Clase
@@ -1019,23 +532,17 @@
                                 </div>
                             </div>
                         </div>
-
-                        {/* BARRA LATERAL: IDENTIDAD LASALLISTA */}
                         <aside className="space-y-6">
                             <div className="bg-gradient-to-br from-[#003057] to-blue-900 text-white rounded-2xl p-8 shadow-xl relative overflow-hidden h-full">
-                                {/* Decoración de fondo */}
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-white opacity-5 rounded-full blur-2xl -mr-10 -mt-10"></div>
-                                
                                 <h3 className="relative z-10 text-sm font-bold text-yellow-400 uppercase mb-6 flex items-center border-b border-white/10 pb-2">
                                     <HeartHandshake className="w-4 h-4 mr-2"/> Identidad Lasallista
                                 </h3>
-
                                 <div className="relative z-10 space-y-8">
                                     <div>
                                         <p className="text-[10px] font-bold text-blue-200 uppercase mb-2 tracking-wider">Misión & Valores</p>
                                         <p className="text-sm font-medium leading-relaxed opacity-95 text-white/90 italic">"{data.identidad}"</p>
                                     </div>
-
                                     <div>
                                         <p className="text-[10px] font-bold text-blue-200 uppercase mb-2 tracking-wider">Perfil de Egreso</p>
                                         <ul className="space-y-3">
@@ -1046,24 +553,16 @@
                                             ))}
                                         </ul>
                                     </div>
-
                                     <div className="pt-6 border-t border-white/10">
                                         <p className="text-[10px] font-bold text-blue-200 uppercase mb-3 tracking-wider">ODS Vinculados</p>
                                         <div className="flex flex-col gap-4">
                                             {data.ods.map(ods => (
                                                 <div key={ods.id} className="bg-white/10 p-3 rounded-lg border border-white/10 hover:bg-white/20 transition-all">
                                                     <div className="flex items-center gap-3 mb-2">
-                                                        <div 
-                                                            className="w-10 h-10 shrink-0 flex items-center justify-center font-ods font-bold text-lg text-white rounded shadow-sm"
-                                                            style={{ backgroundColor: ods.color }}
-                                                        >
-                                                            {ods.id}
-                                                        </div>
+                                                        <div className="w-10 h-10 shrink-0 flex items-center justify-center font-ods font-bold text-lg text-white rounded shadow-sm" style={{ backgroundColor: ods.color }}>{ods.id}</div>
                                                         <span className="text-[10px] font-bold uppercase leading-tight">{ods.nombre}</span>
                                                     </div>
-                                                    <p className="text-[9px] opacity-80 leading-relaxed font-medium italic">
-                                                        "{ods.meta}"
-                                                    </p>
+                                                    <p className="text-[9px] opacity-80 leading-relaxed font-medium italic">"{ods.meta}"</p>
                                                     <p className="text-[8px] text-right mt-1 opacity-50 font-bold uppercase tracking-wider">— {ods.cita}</p>
                                                 </div>
                                             ))}
@@ -1073,8 +572,6 @@
                             </div>
                         </aside>
                     </div>
-
-                    {/* SECUENCIA DIDÁCTICA (ACORDEÓN) */}
                     <div>
                          <h2 className="text-xl font-bold text-[#003057] mb-6 border-l-4 border-[#D4AF37] pl-4 uppercase tracking-tight flex items-center">
                             <FileText className="w-6 h-6 mr-2 text-[#003057]"/> Secuencia Didáctica
@@ -1100,12 +597,10 @@
                                             {fase.sesiones.map(s => (
                                                 <div key={s.num} className="relative pl-8 border-l-2 border-gray-100 ml-4 group-hover:border-blue-100 transition-colors">
                                                     <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-2 border-blue-400 shadow-sm"></div>
-                                                    
                                                     <div className="mb-4">
                                                         <span className="inline-block bg-[#003057] text-white text-[10px] font-black px-2 py-0.5 rounded uppercase tracking-wider mb-1">Sesión {s.num}</span>
                                                         <h4 className="font-bold text-gray-800 text-sm uppercase">{s.obj}</h4>
                                                     </div>
-                                                    
                                                     <div className="bg-slate-50 p-5 rounded-xl text-sm text-gray-600 border border-slate-100 shadow-sm">
                                                         <ul className="space-y-3">
                                                             {s.actividades.map((act, i) => (
@@ -1128,9 +623,6 @@
             )
         };
         
-        // Icono faltante
-        const FolderOpen = (props) => <IconBase {...props} d={<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>} />;
-
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
     </script>
